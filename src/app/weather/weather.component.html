@@ -1,0 +1,25 @@
+
+<input type="text" placeholder="Enter city name..." [(ngModel)]="city">
+
+<button (click)="getCurrentWeather(city)">Click</button>
+<hr>
+
+<p>language: {{currentWeather.request.language}}</p>
+<p>query: {{currentWeather.request.query}}</p>
+<p>type: {{currentWeather.request.type}}</p>
+<p>unit: {{currentWeather.request.unit}}</p>
+<hr>
+<p>country: {{currentWeather.location.country}}</p>
+<p>lat: {{currentWeather.location.lat}}</p>
+<p>localtime: {{currentWeather.location.localtime}}</p>
+<p>lon: {{currentWeather.location.lon}}</p>
+<p>name: {{currentWeather.location.name}}</p>
+<p>region: {{currentWeather.location.region}}</p>
+<hr>
+<p>cloudcover: {{currentWeather.current.cloudcover}}</p>
+<p>feelslike: {{currentWeather.current.feelslike}}</p>
+<p>humidity: {{currentWeather.current.humidity}}</p>
+<p>precip: {{currentWeather.current.precip}}</p>
+<p>pressure: {{currentWeather.current.pressure}}</p>
+<p>temperature: {{currentWeather.current.temperature}}</p>
+<p>visibility: {{currentWeather.current.visibility}}</p>
